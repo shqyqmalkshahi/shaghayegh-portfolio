@@ -13,35 +13,55 @@
         }
 
         .header {
-            background: #ffb6c1;
-            padding: 50px 25px;
+            background: linear-gradient(135deg, #ffb6c1, #f8c8dc);
+            padding: 65px 25px;
             text-align: center;
             color: #333;
         }
 
         .header h1 {
             color: #c2185b;
-            font-size: 42px;
+            font-size: 46px;
             margin-bottom: 10px;
         }
 
         .header p {
-            font-size: 20px;
-            margin: 5px 0;
+            font-size: 19px;
+            margin: 8px auto;
+            max-width: 760px;
+        }
+
+        .button {
+            display: inline-block;
+            margin: 12px 8px 0 8px;
+            padding: 12px 24px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .button-light {
+            background: white;
+            color: #c2185b;
+        }
+
+        .button-dark {
+            background: #c2185b;
+            color: white;
         }
 
         .container {
             width: 85%;
-            max-width: 1000px;
+            max-width: 1050px;
             margin: auto;
             padding: 30px 0;
         }
 
         .card {
             background: white;
-            padding: 25px;
-            margin: 25px 0;
-            border-radius: 20px;
+            padding: 28px;
+            margin: 28px 0;
+            border-radius: 22px;
             box-shadow: 0px 6px 15px rgba(0,0,0,0.08);
         }
 
@@ -78,10 +98,21 @@
 
         .project {
             border: 1px solid #f3c1d3;
-            border-radius: 15px;
-            padding: 18px;
-            margin: 18px 0;
+            border-radius: 18px;
+            padding: 20px;
+            margin: 20px 0;
             background-color: #fffafd;
+            transition: 0.3s ease;
+        }
+
+        .project:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 10px 20px rgba(0,0,0,0.12);
+        }
+
+        .featured {
+            background-color: #fff0f6;
+            border: 2px solid #f8a9c4;
         }
 
         .footer {
@@ -97,8 +128,14 @@
 
     <div class="header">
         <h1>Shaghayegh Malekshahi</h1>
-        <p>Data Science | Analytics | Machine Learning</p>
-        <p>Sports & Marketing Analytics | Business Insights</p>
+        <p><b>Data Science • Machine Learning • Business Analytics</b></p>
+        <p>
+            Turning complex data into actionable business insights through analytics,
+            forecasting, machine learning, and strategic storytelling.
+        </p>
+
+        <a class="button button-light" href="https://github.com/shqyqmalkshahi">GitHub</a>
+        <a class="button button-dark" href="https://www.linkedin.com/in/shaghayegh-malekshahi-a216a63a2/">LinkedIn</a>
     </div>
 
     <div class="container">
@@ -108,7 +145,7 @@
             <p>
                 I am a Data Science graduate student with a strong interest in analytics,
                 machine learning, forecasting, and real-world business problem solving.
-                My work focuses on turning raw data into meaningful insights that can support
+                My work focuses on turning raw data into meaningful insights that support
                 better decisions.
             </p>
 
@@ -147,17 +184,35 @@
         </div>
 
         <div class="card">
-            <h2>Featured Projects</h2>
+            <h2>Current Interests</h2>
 
-            <div class="project">
+            <span class="tag">Sports Analytics</span>
+            <span class="tag">Marketing Analytics</span>
+            <span class="tag">Advertising Analytics</span>
+            <span class="tag">Forecasting</span>
+            <span class="tag">Behavioral Analytics</span>
+            <span class="tag">Business Intelligence</span>
+            <span class="tag">Machine Learning</span>
+        </div>
+
+        <div class="card">
+            <h2>Featured Project</h2>
+
+            <div class="project featured">
                 <h3>Stadium Political Advertising Analysis</h3>
                 <p>
-                    Developed a custom Opportunity Score to evaluate stadium advertising
-                    opportunities using reach, engagement, and cost efficiency.
+                    This project developed a custom Opportunity Score to evaluate stadium
+                    advertising opportunities using reach, engagement, and cost efficiency.
+                    The analysis supports smarter advertising decisions by identifying which
+                    venues, placements, and sports provide the highest value.
                 </p>
-                <p><b>Skills:</b> Python, pandas, data visualization, optimization, advertising analytics</p>
-                <a href="https://github.com/shqyqmalkshahi/stadium-political-advertising-analysis">View Project</a>
+                <p><b>Skills:</b> Python, pandas, optimization, advertising analytics, business strategy</p>
+                <a href="https://github.com/shqyqmalkshahi/stadium-political-advertising-analysis">View Featured Project</a>
             </div>
+        </div>
+
+        <div class="card">
+            <h2>Work / Projects</h2>
 
             <div class="project">
                 <h3>Platform Engagement During Live Sports</h3>
@@ -254,8 +309,8 @@
         <div class="card">
             <h2>Contact</h2>
             <p><b>GitHub:</b> <a href="https://github.com/shqyqmalkshahi">github.com/shqyqmalkshahi</a></p>
-            <p><b>LinkedIn:</b> https://www.linkedin.com/in/shaghayegh-malekshahi-a216a63a2/</p>
-            <p><b>Email:</b> Rosemalekshahi@gmail.com</p>
+            <p><b>LinkedIn:</b> <a href="https://www.linkedin.com/in/shaghayegh-malekshahi-a216a63a2/">linkedin.com/in/shaghayegh-malekshahi</a></p>
+            <p><b>Email:</b> rosemalekshahi@gmail.com</p>
         </div>
 
     </div>
